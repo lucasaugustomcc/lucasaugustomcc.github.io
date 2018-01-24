@@ -1,0 +1,89 @@
+@base <http://w3id.org/s2rwro/md-setup/>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix prov: <http://www.w3.org/ns/prov-o#>.
+@prefix wfdesc: <http://purl.org/w4ever/wfdesc#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#>.
+
+<#resources/script.sh> a wf4ever:Script, prov:Entity.
+
+<#script/split> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "1644"^^xsd:Integer;
+                            oa:end "1786"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/psgen> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "2924"^^xsd:Integer;
+                            oa:end "4461"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/solvate> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "4951"^^xsd:Integer;
+                            oa:end "5088"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/ionize> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "5640"^^xsd:Integer;
+                            oa:end "5813"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/constraints_definition> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "6617"^^xsd:Integer;
+                            oa:end "7020"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#we1> a wfdesc:Workflow, prov:Entity;
+    prov:wasDerivedFrom     <#resources/script.sh>;
+    wfdesc:hasSubProcess    <#we1/split>, 
+                            <#we1/psgen>, 
+                            <#we1/solvate>, 
+                            <#we1/ionize>, 
+                            <#we1/constraints_definition>.
+
+<#we1/split> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/split>.
+
+<#we1/psgen> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/psgen>.
+
+<#we1/solvate> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/solvate>.
+
+<#we1/ionize> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/ionize>.
+
+<#we1/constraints_definition> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/constraints_definition>.
+    
+<#we2> a wfdesc:Workflow, prov:Entity;
+    prov:wasDerivedFrom  <#we1>;
+    wfdesc:hasSubProcess <#we1/split>, 
+                         <#we1/psgen>, 
+                         <#we1/solvate>, 
+                         <#we1/ionize>, 
+                         <#we1/constraints_definition>.

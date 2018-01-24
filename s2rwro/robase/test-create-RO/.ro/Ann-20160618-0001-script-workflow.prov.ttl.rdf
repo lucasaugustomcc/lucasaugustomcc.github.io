@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ns1="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="provenance/script-workflow.prov.ttl">
+    <ns1:title>PROV statements defining derivation of the workflow from script</ns1:title>
+  </rdf:Description>
+</rdf:RDF>

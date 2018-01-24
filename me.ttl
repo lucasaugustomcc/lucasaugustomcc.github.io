@@ -1,0 +1,55 @@
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+  a foaf:Document ;
+  dc:creator <https://w3id.org/people/lucascarvalho#me> ;
+  rdfs:comment "This is the authoritative FOAF profile of Lucas Carvalho, Ph.D student in Computer Science."@en;
+  dc:date "2017-07-04T10:42:42-03:00"^^xsd:dateTime .
+
+<https://w3id.org/people/lucascarvalho#me>  
+  a foaf:Person ;
+  rdfs:comment """I am a PhD student in Computer Science of Institute of Computing at University of Campinas (UNICAMP), Brazil, since September 2014. Master in Computer Science from Computing Department at Federal University of Sergipe (UFS), 2011-2013. Bachelor of Computer Science from Computing Department at Federal University of Sergipe (UFS), 2005-2009.
+
+	I work at Laboratory of Information Systems (LIS) at Institute of Computing under supervision of Prof. Claudia Bauzer Medeiros, Ph.D. I hold a scholarship from São Paulo Research Foundation (FAPESP).
+
+	I have done research in several fields of Computer Science such as Recommenter Systems, Software Engineering, Interactive Digital Television (iDTV) and currently working with Scientific Data Management. Former member of Image Processing and Artificial Intelligence Research Group (Pii/CNPq) at UFS, under advisement of Prof. Hendrik Teixeira Macedo, PhD."""@en ;
+  owl:sameAs
+	<http://dblp.uni-trier.de/pers/hd/c/Carvalho:Lucas_Augusto_Montalv=atilde=o_Costa>;
+  rdfs:label  	
+  	"Lucas Carvalho"@en;  	
+  foaf:name
+  	"Lucas Augusto Montalvão Costa Carvalho"@en;
+  foaf:firstName
+  	"Lucas Augusto"@en;  	
+  foaf:givenname  	
+  	"Lucas Augusto"@en;
+  foaf:surname
+  	"Carvalho"@en;
+  foaf:family_name
+  	"Carvalho"@en;
+  foaf:img <http://www.lis.ic.unicamp.br/~lucascarvalho/img/foto-terno.jpg>;
+  foaf:mbox
+	<mailto:lucas.carvalho@ic.unicamp.br>,
+	<mailto:lucasaugustomcc@gmail.com> ;
+  foaf:homepage <https://w3id.org/people/lucascarvalho/> ;
+  dbo:birthDate "1985-10-03"^^xsd:date ;
+  dbo:birthPlace <http://dbpedia.org/resource/Aracaju> ;
+  dbo:nationality <http://dbpedia.org/resource/Brazil> ;
+  rdfs:seeAlso
+  	<https://scholar.google.com/citations?hl=en&user=0-QXd5UAAAAJ>,
+  	<https://linkedin.com/in/lucasaugustomcc>,
+  	<https://www.researchgate.net/profile/Lucas_Augusto_Carvalho>,
+  	<http://orcid.org/0000-0002-2412-7183>,
+  	<https://twitter.com/lucasaugustomcc> ;  
+  foaf:knows
+    <https://w3id.org/people/dgarijo#me>;
+  foaf:topic_interest <http://dbpedia.org/resource/E-Science>,
+        <http://en.wikipedia.org/wiki/Scientific_workflow_system>,
+        <http://semanticweb.org/wiki/Category:Topic_Semantic_Web>,
+        <http://www.w3.org/2005/Incubator/prov/wiki/What_Is_Provenance>,
+        <http://www.w3.org/DesignIssues/LinkedData.html> .

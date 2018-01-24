@@ -1,0 +1,93 @@
+set freq		1000
+set out			equilibration-1
+set run			100000
+set min			1000
+
+# Input files
+coordinates		../build/cbh1.pdb
+structure		../build/cbh1.psf
+
+parameters              ../toppar/par_all22_prot.prm
+parameters		../toppar/pca.prm
+parameters		../toppar/par_all36_carb.prm
+paratypecharmm		on
+
+# Output files
+outputname		output/$out
+restartname		output/$out
+DCDfile			output/$out.dcd
+binaryoutput		yes
+binaryrestart		yes
+restartfreq		$freq
+DCDfreq			$freq
+DCDUnitCell		yes
+
+# Standard Output
+outputEnergies		$freq
+outputtiming		$freq
+
+# Non-bonded force field parameters
+cutoff			12.0
+switching		on
+switchdist		10.0
+exclude			scaled1-4
+dielectric		1.0
+nonbondedscaling	1.0
+1-4scaling		1.0
+vdwGeometricSigma	no
+limitdist		0.
+pairlistdist            14
+rigidbonds              all
+
+# Particle-mesh Ewald Sum
+PME			yes
+PMEGridSpacing		1.0
+
+# Integrator Parameters
+nonbondedFreq		1
+fullElectFrequency	2 
+stepspercycle		10
+
+# Periodic boundary conditions
+CellBasisVector1      79.13   0.00   0.00
+CellBasisVector2       0.00  81.15   0.00
+CellBasisVector3       0.00   0.00  96.93
+CellOrigin             0.00   0.00   0.00
+wrapAll			on
+
+# Dynamics
+set temperature		310.0
+timestep		2.0
+firsttimestep		0
+temperature		$temperature
+
+# Temperature scaling
+langevin on
+langevinTemp $temperature
+langevinDamping 1.0
+langevinHydrogen off
+
+# DO NOT Use constant pressure
+useGroupPressure      yes
+useFlexibleCell       no
+useConstantArea       no
+langevinPiston        off
+langevinPistonTarget  1.01325
+langevinPistonPeriod  200.
+langevinPistonDecay   100.
+langevinPistonTemp    $temperature
+
+# Constraints
+constraints	on
+consExp		2
+consRef		../build/fixed.1.pdb
+consKfile	../build/fixed.1.pdb
+consKcol	B
+
+# Run
+minimize		$min
+reinitvels  $temperature
+run 			$run
+
+
+

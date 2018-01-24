@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ao="http://purl.org/ao/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ro="http://purl.org/wf4ever/ro#"
+>
+  <rdf:Description rdf:nodeID="N60270e7445b0421eb404509461480a9d">
+    <ro:annotatesAggregatedResource rdf:resource="workflow/executable-workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-executable-workflow.t2flow.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4b327a302dc401798584d5d57269ba5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-abstract-workflow.png.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="yesworkflow/abstract-workflow.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9dd573ecec14b68b4665293d8e9e308">
+    <ro:annotatesAggregatedResource rdf:resource="build/cbh1.psf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-cbh1.psf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne79e6f32cdd04c78b59773a2e9db135f">
+    <ro:annotatesAggregatedResource rdf:resource="toppar/pca.rtf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-pca.rtf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N878ff68d8abb4a95b0a0a6b256845ed1">
+    <ro:annotatesAggregatedResource rdf:resource="build/build.sh"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-build.sh.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99a62dfce7de44afbc36903a76d5eb57">
+    <ro:annotatesAggregatedResource rdf:resource="md1/output/distance.dat"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-distance.dat.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N78b7cb1be21f4dcb9b55bdb472812cd4">
+    <ro:annotatesAggregatedResource rdf:resource="md1/equilibration-2.namd"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-equilibration-2.namd.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-water.pdb.rdf"/>
+    <ore:aggregates rdf:nodeID="Nbf76658e283b4d3cbf4c9ef5274df7c5"/>
+    <ore:aggregates rdf:nodeID="N416a0691b60e4c738a5f91a4439efae9"/>
+    <ore:aggregates rdf:resource="md1/dynamics-1.namd"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-refined-workflow.provenance.bundle.zip.rdf"/>
+    <ore:aggregates rdf:nodeID="Nf9dd573ecec14b68b4665293d8e9e308"/>
+    <ore:aggregates rdf:nodeID="Nf112b1a0015f4d7bb116619a9ea60039"/>
+    <ore:aggregates rdf:resource="toppar/pca.prm"/>
+    <ore:aggregates rdf:resource="md1/output/distance"/>
+    <ore:aggregates rdf:resource="toppar/top_all22_prot.rtf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-wbox.psf.rdf"/>
+    <ore:aggregates rdf:resource="build/cbh1.psf"/>
+    <ore:aggregates rdf:nodeID="N53b39b1ae27642b28457272847f731bc"/>
+    <ore:aggregates rdf:resource="build/build.sh"/>
+    <ore:aggregates rdf:resource="workflow/executable-workflow.t2flow"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-build.sh.rdf"/>
+    <ore:aggregates rdf:nodeID="Nf81e3853b6c8412d90d299d7d2f34443"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-structure.pdb.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-equilibration-1.namd.rdf"/>
+    <dcterms:created>2016-06-18T12:03:58</dcterms:created>
+    <ore:aggregates rdf:resource="provenance/executable-workflow.provenance.bundle.zip"/>
+    <ore:aggregates rdf:resource="build/cbh1.pdb"/>
+    <dcterms:description>Reproducible WRO</dcterms:description>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-cbh1.pdb.rdf"/>
+    <ore:aggregates rdf:resource="toppar/pca.rtf"/>
+    <ore:aggregates rdf:nodeID="N0942986c4834437aa7a51a1eda0d8739"/>
+    <ore:aggregates rdf:nodeID="N878ff68d8abb4a95b0a0a6b256845ed1"/>
+    <ore:aggregates rdf:nodeID="Nca0dbc55084e43c689b095173add6f9c"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-protein.pdb.rdf"/>
+    <dcterms:creator>Lucas</dcterms:creator>
+    <ore:aggregates rdf:resource="build/water.pdb"/>
+    <ore:aggregates rdf:nodeID="Nb5c34e53a47848ad8f1d3f3200104f50"/>
+    <ore:aggregates rdf:resource="workflow/refined-workflow.t2flow"/>
+    <ore:aggregates rdf:nodeID="N9eb00614e5e64f91b4f8db8ad835bfe9"/>
+    <ore:aggregates rdf:resource="toppar/par_all36_carb.prm"/>
+    <ore:aggregates rdf:resource="build/cal.pdb"/>
+    <ore:aggregates rdf:nodeID="Ncdcb3a19d4d34b84b8f1c4bbf96562ee"/>
+    <ore:aggregates rdf:nodeID="N3f54567ec9e44745824a986d3448ea47"/>
+    <ore:aggregates rdf:resource="build/structure.pdb"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-script-workflow.prov.ttl.rdf"/>
+    <ore:aggregates rdf:resource="md1/output/trajectory.dcd"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-distance.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-refined-workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-trajectory.dcd.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-distance.inp.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-pca.rtf.rdf"/>
+    <ore:aggregates rdf:nodeID="N60270e7445b0421eb404509461480a9d"/>
+    <ore:aggregates rdf:resource="md1/equilibration-2.namd"/>
+    <ore:aggregates rdf:nodeID="N99a62dfce7de44afbc36903a76d5eb57"/>
+    <ore:aggregates rdf:nodeID="N13431bbab6f843bbb808b18b87402095"/>
+    <ore:aggregates rdf:nodeID="N5493f447ed534ea9b394b8de1223a33f"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-hyd.psf.rdf"/>
+    <ore:aggregates rdf:resource="toppar/top_all36_carb.rtf"/>
+    <ore:aggregates rdf:resource="build/hyd.pdb"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-equilibration-3.namd.rdf"/>
+    <dcterms:identifier>RO-id-testCreate</dcterms:identifier>
+    <ore:aggregates rdf:resource="build/wbox.psf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-bglc.psf.rdf"/>
+    <ore:aggregates rdf:nodeID="N3ed3f6903874443f9ebf872304faf089"/>
+    <ore:aggregates rdf:resource="md1/equilibration-3.namd"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-cbh1.psf.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-dynamics-1.namd.rdf"/>
+    <ore:aggregates rdf:nodeID="N5c0b9f259f2449d1bb17c8c452d537b5"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-wbox.pdb.rdf"/>
+    <ore:aggregates rdf:resource="md1/output/distance.dat"/>
+    <ore:aggregates rdf:nodeID="N0ff601c9fc744e86b26147196e4e9243"/>
+    <ore:aggregates rdf:nodeID="N1dc0d2576fdf4cd39c6faf76a02ea352"/>
+    <ore:aggregates rdf:resource="md1/output/trajectory.psf"/>
+    <ore:aggregates rdf:resource="workflow/refined-workflow.png"/>
+    <ore:aggregates rdf:nodeID="Nc0448212f2434df2ba5595b09a15d7ff"/>
+    <ore:aggregates rdf:nodeID="Na623aa1f576d4628a41532b8ff0d1d29"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-top_all36_prot.rtf.rdf"/>
+    <ore:aggregates rdf:nodeID="Nf16634a59ff94fea83c6e403d5f8f74f"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-fixed.2.pdb.rdf"/>
+    <ore:aggregates rdf:nodeID="Ne79e6f32cdd04c78b59773a2e9db135f"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-trajectory.psf.rdf"/>
+    <ore:aggregates rdf:nodeID="Ndedefe0e8d084224955c10a39bcf5397"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-hyd.pdb.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-top_all36_carb.rtf.rdf"/>
+    <ore:aggregates rdf:resource="md1/equilibration-1.namd"/>
+    <ore:aggregates rdf:nodeID="Na4b327a302dc401798584d5d57269ba5"/>
+    <ore:aggregates rdf:resource="build/hyd.psf"/>
+    <ore:aggregates rdf:nodeID="Ne28c612664304718aecffab8e4638e2d"/>
+    <ore:aggregates rdf:nodeID="N7a40923c8491408abd5891ffa5c5edb0"/>
+    <ore:aggregates rdf:nodeID="N0b2f0729ed5a42709a6f1af0edaea873"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-executable-workflow.provenance.bundle.zip.rdf"/>
+    <ore:aggregates rdf:nodeID="N4843d3f5698c4d2f824fea3bedfdd8e5"/>
+    <ore:aggregates rdf:resource="build/protein.pdb"/>
+    <dcterms:title>Reproducible WRO</dcterms:title>
+    <ore:aggregates rdf:resource="workflow/executable-workflow.png"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-bglc.pdb.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-par_all22_prot.prm.rdf"/>
+    <ore:aggregates rdf:nodeID="N80ffda0a4d0e4b7aab39aa6fa677d498"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-distance.dat.rdf"/>
+    <ore:aggregates rdf:resource="toppar/par_all22_prot.prm"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-README.rdf"/>
+    <ore:aggregates rdf:resource="provenance/refined-workflow.provenance.bundle.zip"/>
+    <ore:aggregates rdf:nodeID="N6ac5dd31b211447fab62b9cf0e9f2d10"/>
+    <ore:aggregates rdf:resource="md1/output/distance.inp"/>
+    <ore:aggregates rdf:resource="build/fixed.2.pdb"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-equilibration-2.namd.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-executable-workflow.t2flow.rdf"/>
+    <ore:aggregates rdf:resource="build/fixed.1.pdb"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-fixed.1.pdb.rdf"/>
+    <ore:aggregates rdf:resource="md1/output/README"/>
+    <ore:aggregates rdf:resource="yesworkflow/abstract-workflow.png"/>
+    <ore:aggregates rdf:resource="build/wbox.pdb"/>
+    <ore:aggregates rdf:resource="build/bglc.pdb"/>
+    <ore:aggregates rdf:nodeID="N78b7cb1be21f4dcb9b55bdb472812cd4"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-par_all36_carb.prm.rdf"/>
+    <ore:aggregates rdf:nodeID="Ne5120c63aa1e4959acd3e6b474883f81"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-abstract-workflow.png.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-cal.pdb.rdf"/>
+    <ore:aggregates rdf:resource=".ro/Ann-20160618-0001-pca.prm.rdf"/>
+    <ore:aggregates rdf:resource="provenance/script-workflow.prov.ttl"/>
+    <ore:aggregates rdf:nodeID="Nf8c216f6572548cab447b5780d32d852"/>
+    <ore:aggregates rdf:nodeID="Nb7cdfb681f364918ac5ea54ad628ed6b"/>
+    <ore:aggregates rdf:nodeID="Nd2a0f22ef6634e3094563b2b84d9c431"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c0b9f259f2449d1bb17c8c452d537b5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-hyd.pdb.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/hyd.pdb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ed3f6903874443f9ebf872304faf089">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-equilibration-1.namd.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="md1/equilibration-1.namd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ac5dd31b211447fab62b9cf0e9f2d10">
+    <ro:annotatesAggregatedResource rdf:resource="build/structure.pdb"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-structure.pdb.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf76658e283b4d3cbf4c9ef5274df7c5">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/water.pdb"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-water.pdb.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb7cdfb681f364918ac5ea54ad628ed6b">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-cal.pdb.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/cal.pdb"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne5120c63aa1e4959acd3e6b474883f81">
+    <ro:annotatesAggregatedResource rdf:resource="md1/output/README"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-README.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2a0f22ef6634e3094563b2b84d9c431">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/manifest.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8c216f6572548cab447b5780d32d852">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="workflow/refined-workflow.t2flow"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-refined-workflow.t2flow.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a40923c8491408abd5891ffa5c5edb0">
+    <ro:annotatesAggregatedResource rdf:resource="md1/output/distance.inp"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-distance.inp.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb5c34e53a47848ad8f1d3f3200104f50">
+    <ro:annotatesAggregatedResource rdf:resource="toppar/par_all22_prot.prm"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-par_all22_prot.prm.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80ffda0a4d0e4b7aab39aa6fa677d498">
+    <ro:annotatesAggregatedResource rdf:resource="build/wbox.psf"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-wbox.psf.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncdcb3a19d4d34b84b8f1c4bbf96562ee">
+    <ro:annotatesAggregatedResource rdf:resource="provenance/executable-workflow.provenance.bundle.zip"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-executable-workflow.provenance.bundle.zip.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N13431bbab6f843bbb808b18b87402095">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="md1/output/trajectory.psf"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-trajectory.psf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0942986c4834437aa7a51a1eda0d8739">
+    <ro:annotatesAggregatedResource rdf:resource="build/bglc.pdb"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-bglc.pdb.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1dc0d2576fdf4cd39c6faf76a02ea352">
+    <ro:annotatesAggregatedResource rdf:resource="build/hyd.psf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-hyd.psf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndedefe0e8d084224955c10a39bcf5397">
+    <ro:annotatesAggregatedResource rdf:resource="toppar/par_all36_carb.prm"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-par_all36_carb.prm.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4843d3f5698c4d2f824fea3bedfdd8e5">
+    <ro:annotatesAggregatedResource rdf:resource="md1/output/distance"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-distance.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca0dbc55084e43c689b095173add6f9c">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-protein.pdb.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/protein.pdb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf81e3853b6c8412d90d299d7d2f34443">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-trajectory.dcd.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="md1/output/trajectory.dcd"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne28c612664304718aecffab8e4638e2d">
+    <ro:annotatesAggregatedResource rdf:resource="provenance/script-workflow.prov.ttl"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-script-workflow.prov.ttl.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9eb00614e5e64f91b4f8db8ad835bfe9">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-fixed.2.pdb.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/fixed.2.pdb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53b39b1ae27642b28457272847f731bc">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-top_all36_carb.rtf.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="toppar/top_all36_carb.rtf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na623aa1f576d4628a41532b8ff0d1d29">
+    <ro:annotatesAggregatedResource rdf:resource="build/wbox.pdb"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-wbox.pdb.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf16634a59ff94fea83c6e403d5f8f74f">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/bglc.psf"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-bglc.psf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0448212f2434df2ba5595b09a15d7ff">
+    <ro:annotatesAggregatedResource rdf:resource="provenance/refined-workflow.provenance.bundle.zip"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-refined-workflow.provenance.bundle.zip.rdf"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5493f447ed534ea9b394b8de1223a33f">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="toppar/top_all36_prot.rtf"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-top_all36_prot.rtf.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ff601c9fc744e86b26147196e4e9243">
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-fixed.1.pdb.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/fixed.1.pdb"/>
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf112b1a0015f4d7bb116619a9ea60039">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-cbh1.pdb.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="build/cbh1.pdb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f54567ec9e44745824a986d3448ea47">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="md1/equilibration-3.namd"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-equilibration-3.namd.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N416a0691b60e4c738a5f91a4439efae9">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-dynamics-1.namd.rdf"/>
+    <ro:annotatesAggregatedResource rdf:resource="md1/dynamics-1.namd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b2f0729ed5a42709a6f1af0edaea873">
+    <rdf:type rdf:resource="http://purl.org/wf4ever/ro#AggregatedAnnotation"/>
+    <ro:annotatesAggregatedResource rdf:resource="toppar/pca.prm"/>
+    <ao:body rdf:resource=".ro/Ann-20160618-0001-pca.prm.rdf"/>
+  </rdf:Description>
+</rdf:RDF>

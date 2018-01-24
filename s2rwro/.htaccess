@@ -1,0 +1,3 @@
+DirectoryIndex index.html
+RewriteEngine on
+RewriteRule ^md-setup.robundle$ https://lucasaugustomcc.github.com/s2rwro/index.html [R=301,L]

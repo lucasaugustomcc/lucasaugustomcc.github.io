@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PROV statements</title>
+         <meta name="description" content="PROV statements to declare derivation of workflows from scripts">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+    	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $('pre code').each(function(i, block) {
+			    hljs.highlightBlock(block);
+			  });
+			});
+		</script>
+		<style>
+            body { margin: 20px; }
+        </style>
+	</head>
+  <body>  
+    <h1>PROV statements</h1>
+    <p>PROV statements to declare derivation of workflows from scripts.</p>
+    <p>
+      <a class="btn btn-lg btn-primary" href="index.html" role="button">Back to Main Page</a>
+    </p>   
+    <pre>
+      <code class="turtle">
+@base <http://w3id.org/s2rwro/md-setup/>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix prov: <http://www.w3.org/ns/prov-o#>.
+@prefix wfdesc: <http://purl.org/w4ever/wfdesc#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#>.
+
+<#resources/script.sh> a wf4ever:Script, prov:Entity.
+
+<#script/split> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "1644"^^xsd:Integer;
+                            oa:end "1786"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/psgen> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "2924"^^xsd:Integer;
+                            oa:end "4461"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/solvate> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "4951"^^xsd:Integer;
+                            oa:end "5088"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/ionize> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "5640"^^xsd:Integer;
+                            oa:end "5813"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#script/constraints_definition> a wfdesc:ProcessImplementation, prov:Entity;    
+    prov:wasDerivedFrom <#resources/script.sh>,
+                        [   
+                            a oa:TextPositionSelector;
+                            oa:start "6617"^^xsd:Integer;
+                            oa:end "7020"^^xsd:Integer;
+                            a prov:Entity
+                        ]
+.
+
+<#we1> a wfdesc:Workflow, prov:Entity;
+    prov:wasDerivedFrom     <#resources/script.sh>;
+    wfdesc:hasSubProcess    <#we1/split>, 
+                            <#we1/psgen>, 
+                            <#we1/solvate>, 
+                            <#we1/ionize>, 
+                            <#we1/constraints_definition>.
+
+<#we1/split> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/split>.
+
+<#we1/psgen> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/psgen>.
+
+<#we1/solvate> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/solvate>.
+
+<#we1/ionize> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/ionize>.
+
+<#we1/constraints_definition> a wfdesc:Process;
+    wfdesc:hasImplementation <#script/constraints_definition>.
+    
+<#we2> a wfdesc:Workflow, prov:Entity;
+    prov:wasDerivedFrom  <#we1>;
+    wfdesc:hasSubProcess <#we1/split>, 
+                         <#we1/psgen>, 
+                         <#we1/solvate>, 
+                         <#we1/ionize>, 
+                         <#we1/constraints_definition>.
+      </code>
+    </pre>
+    <!-- Begin Cookie Consent script http://cookie-consent.org/ -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"}; var cookieconsent_id = '33a00edb-621d-4ccb-8b2c-c4da588f2144';</script>
+
+    <script type="text/javascript" src="//cdn.front.to/libs/cookieconsent.min.3.js"></script>
+
+    <noscript><a href="http://cookie-consent.org/">EU cookie consent script</a></noscript>
+    <!-- End Cookie Consent script -->
+
+  </body>
+</html>

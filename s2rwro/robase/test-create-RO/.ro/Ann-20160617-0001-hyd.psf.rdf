@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xml:base=".."
+   xmlns:ns1="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="build/hyd.psf">
+    <ns1:title>​structure file for the crystal structure with hydrogen atoms added​</ns1:title>
+  </rdf:Description>
+</rdf:RDF>

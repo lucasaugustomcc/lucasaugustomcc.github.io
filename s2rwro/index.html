@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Converting Scripts into Reproducible Workflow Research Object</title>
+        <meta name="description" content="Research object bundle created as a proof of concept of the methodology to guide the conversion of scripts into reproducible workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/696288168c.js"></script>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <style>
+            body { margin: 20px; }
+        </style>
+    </head>
+    <body>   
+      <div class="container">     
+        <div class="jumbotron">
+          <h1>Converting Scripts into Reproducible Workflow Research Object</h1>
+          <p>This page shows supplementary resources used to demonstrate how our methodology works. Below we show the Reproducible Workflow Research Object Bundle created following our methodological steps defined in the article submitted to the 2016 IEEE 12th International Conference on eScience.</p>
+          <p>The bundle was created using the <a href="https://researchobject.github.io/specifications/bundle/">Research Object Bundle specification 1.0</a> and <a href="https://github.com/wf4ever/ro-manager">RO Manager</a>. We created a <a href="create-RO.sh">script</a> to define the resources to be aggregated in the bundle and invoke RO Manager.</p>
+          
+          <p>
+            <a class="btn btn-lg btn-primary" href="robase/md-setup.robundle" role="button">Download the Reproducible Workflow Research Object Bundle</a>
+          </p>
+          <p>A Research Object Bundle</a> provides a way to collect the resources that are aggregated in a research object, represented as files in a ZIP archive, in addition to their metadata and annotations. The ZIP archive thus becomes a single representation of a research object and which can be exported, archived, published and transferred like a regular file or resource.</p> 
+          
+          <h2>Permanent URL to this page</h2>
+          <a href="https://w3id.org/w2share/s2rwro/">https://w3id.org/w2share/s2rwro/</a>
+        </div>
+        <h2>Authors</h2>
+        <ul>
+          <li>Lucas Carvalho - lucas.carvalho@ic.unicamp.br</li>
+          <li>Khalid Belhajjame - Khalid.Belhajjame@dauphine.fr</li>
+          <li>Claudia Bauzer Medeiros - cmbm@ic.unicamp.br</li>
+        </ul>
+        <h2>Case Study - Molecular Dynamics</h2>
+        <p>Our case study is based on a molecular dynamics simulation defined in the following article:</p>
+        <p>Silveira, R.L. and Skaf, M. S. Molecular Dynamics Simulations of Family 7 Cellobiohydrolase Mutants Aimed at Reducing Product Inhibition. J. Phys. Chem. B 119, 9295-9303 (2015). DOI: <a href="https://doi.org/10.1021/jp509911m">https://doi.org/10.1021/jp509911m</a></p>
+        <h2>Manifest</h2>
+        <table class="table">
+          <thead>
+            <th>File</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="robase/test-create-RO/build/structure.pdb">build/structure.pdb</a></td><td>crystal ​structure​ of the protein</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/water.pdb">build/water.pdb</a></td><td>coordinates of water molecules present in the crystal structure</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/protein.pdb">build/protein.pdb</a></td><td>coordinates of the protein atoms​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/cal.pdb">build/cal.pdb</a></td><td>coordinates of calcium ions present in the crystal structure</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/toppar/par_all22_prot.prm">toppar/par_all22_prot.prm</a></td><td>force field parameter for the non-standard residue PCA</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/toppar/par_all36_carb.prm">toppar/par_all36_carb.prm</a></td><td>force field parameters for carbohydrates</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/toppar/pca.prm">toppar/pca.prm</a></td><td>force field parameter for the non-standard residue PCA</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/toppar/pca.rtf">toppar/pca.rtf</a></td><td>topology file for ​the non-standard residue PCA</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/toppar/top_all36_prot.rtf">toppar/top_all36_prot.rtf</a></td><td>topology file for protein​s</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/toppar/top_all36_carb.rtf">toppar/top_all36_carb.rtf</a></td><td>topology file for carbohydrates​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/hyd.pdb">build/hyd.pdb</a></td><td>crystal structure with hydrogen atoms added​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/hyd.psf">build/hyd.psf</a></td><td>structure file for the crystal structure with hydrogen atoms added​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/wbox.pdb">build/wbox.pdb</a></td><td>coordinates of the solvated system</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/wbox.psf">build/wbox.psf</a></td><td>structure file of the solvated system</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/bglc.pdb">build/bglc.pdb</a></td><td>coordinates of the glucan chain present in the crystal structure</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/bglc.psf">build/bglc.psf</a></td><td>structure file for the glucan chain</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/cbh1.pdb">build/cbh1.pdb</a></td><td>initial coordinates for the simulations, containing protein, water, ions and glucan chain</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/cbh1.psf">build/cbh1.psf</a></td><td>structure file for the coordinate file cbh1.pdb</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/fixed.1.pdb">build/fixed.1.pdb</a></td><td>coordinates for the whole system (cbh1.pdb), indicating which atoms should be kept fixed along the simulation</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/fixed.2.pdb">build/fixed.2.pdb</a></td><td>coordinates for the whole system (cbh1.pdb), indicating which atoms should be kept fixed along the simulation</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/dynamics-1.namd">md1/dynamics-1.namd</a></td><td>input for MD simulation​ -- production runs, after equilibration steps</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/equilibration-1.namd">md1/equilibration-1.namd</a></td><td>input for MD simulation, with fixed atoms indicated by the file fixed.1.pdb​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/equilibration-2.namd">md1/equilibration-2.namd</a></td><td>input for MD simulation, with fixed atoms indicated by the file fixed.2.pdb​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/equilibration-3.namd">md1/equilibration-3.namd</a></td><td>input for MD simulation​, with all atoms free</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/output/distance">md1/output/distance</a></td><td>program to compute distance between pairs of atoms​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/output/distance.dat">md1/output/distance.dat</a></td><td>distance between atoms in function of the simulation time​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/output/distance.inp">md1/output/distance.inp</a></td><td>input for the program distance​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/output/README">md1/output/README</a></td><td>README</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/md1/output/trajectory.dcd">md1/output/trajectory.dcd</a></td><td>output of the MD simulation: xyz coordinates of the protein in function of the time​</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/workflow/executable-workflow.t2flow">workflow/executable-workflow.t2flow</a></td><td>initial executable workflow</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/workflow/refined-workflow.t2flow">workflow/refined-workflow.t2flow</a></td><td>refined executable workflow</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/provenance/executable-workflow.provenance.bundle.zip">provenance/executable-workflow.provenance.bundle.zip</a></td><td>provenance traces bundle exported by Taverna from execution of the initial workflow</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/provenance/refined-workflow.provenance.bundle.zip">provenance/refined-workflow.provenance.bundle.zip</a></td><td>provenance traces bundle exported by Taverna from execution of the refined workflow</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/build/build.sh">build/build.sh</a></td><td>original MD script</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/yesworkflow/abstract-workflow.png">yesworkflow/abstract-workflow.png</a></td><td>abstract workflow derived from the script</td>
+            </tr>
+            <tr>
+              <td><a href="robase/test-create-RO/provenance/script-workflow.prov.ttl">script-workflow.prov.ttl</a></td><td>PROV statements wrt workflow derived from the script blocks</td>
+            </tr>            
+          </tbody>
+        </table>
+        <h2>PROV Statements</h2>
+        <p>PROV statements to declare derivation of workflows from scripts. In the article the listing containing the PROV statements was not complete due to lack of space. <a href="script-workflow-prov.html"><i class="fa fa-search"></i> View Complete Listing</a></p> 
+        <h2>Requirements</h2>
+        <p>These softwares are required  to run the workflows.</p>
+        <ul>
+        	<li><b>Taverna Workbench</b> enables you to graphically create, edit and run workflows on your computer. <a href="http://www.taverna.org.uk/download/workbench/"><i class="fa fa-external-link"></i> Download</a></li>
+        	<li><b>VMD</b> is a molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3-D graphics and built-in scripting. <a href="http://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD"><i class="fa fa-external-link"></i> Download</a></li>
+        	<li><b>NAMD</b> is a parallel, object-oriented molecular dynamics code designed for high-performance simulation of large biomolecular systems. Simulation preparation and analysis is integrated into the visualization package VMD. <a href="http://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD"><i class="fa fa-external-link"></i> Download</a></li>
+    	</ul>
+        <h2>Images</h2>
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+              <img src="robase/test-create-RO/yesworkflow/abstract-workflow.png" title="abstract workflow" style="height:300px">
+              <div class="caption">
+                <h3>Abstract Workflow</h3>
+                <p>Workflow-view derived from the annotated script using YesWorkflow tool.</p>
+                <p><a href="robase/test-create-RO/yesworkflow/abstract-workflow.png" class="btn btn-primary" role="button"><i class="fa fa-search"></i> View Full Image</a> <a href="script.html" class="btn btn-info" role="button"><i class="fa fa-search"></i> View Annotated Script</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+              <img src="robase/test-create-RO/workflow/executable-workflow.png" title="executable workflow" style="height:300px">
+              <div class="caption">
+                <h3>Executable Workflow</h3>
+                <p>Workflow derived from the script blocks.</p>
+                <p><a href="robase/test-create-RO/workflow/executable-workflow.png" class="btn btn-primary" role="button"><i class="fa fa-search"></i> View Full Image</a> <a href="robase/test-create-RO/workflow/executable-workflow.t2flow" class="btn btn-info" role="button"><i class="fa fa-download"></i> Download Workflow</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+              <img src="robase/test-create-RO/workflow/refined-workflow.png" title="refined workflow" style="height:300px">
+              <div class="caption">
+                <h3>Refined Workflow</h3>
+                <p>Workflow derived from the executable workflow.</p>
+                <p><a href="robase/test-create-RO/workflow/refined-workflow.png" class="btn btn-primary" role="button"><i class="fa fa-search"></i> View Full Image</a> <a href="robase/test-create-RO/workflow/refined-workflow.t2flow" class="btn btn-info" role="button"><i class="fa fa-download"></i> Download Workflow</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Acknowledgments</h2>
+        <p>Work partially financed by FAPESP (2014/23861-4), FAPESP/CEPID CCES (2013/08293-7), FAPESP-PRONEX (eScience project), INCT in Web Science, and individual grants from CNPq. We thank Prof. Munir Skaf and his group from the Institute of Chemistry at Unicamp for making their scripts and data available and for their valuable feedback. </p>
+      </div>
+      <!-- Begin Cookie Consent script http://cookie-consent.org/ -->
+      <script type="text/javascript">
+          window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"}; var cookieconsent_id = '33a00edb-621d-4ccb-8b2c-c4da588f2144';</script>
+
+      <script type="text/javascript" src="//cdn.front.to/libs/cookieconsent.min.3.js"></script>
+
+      <noscript><a href="http://cookie-consent.org/">EU cookie consent script</a></noscript>
+      <!-- End Cookie Consent script -->
+
+    </body>
+</html>

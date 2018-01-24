@@ -1,0 +1,8 @@
+dcd trajectory.dcd
+psf trajectory.psf
+selection1 protein and resid 251
+selection2 protein and resid 259
+image yes
+output distance.dat
+lastframe 0
+stride 1

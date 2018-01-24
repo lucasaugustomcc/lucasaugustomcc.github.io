@@ -1,0 +1,34 @@
+! Parameter file for oxoproline (PCA)
+
+
+BONDS
+
+CP2 C   200.000     1.5220  ! CT2  CC
+
+
+ANGLES
+
+C   CP2 HA  33.000    109.50   30.00   2.16300 ! HA   CT2  CC 
+CP2 CP2 C   52.000   112.3000                  ! CP2  CP1  C     
+CP2 C   O   80.000   118.0000                  ! O    C    CP1   
+CP2 C   N   20.000   112.5000                  ! N    C    CP1   
+
+DIHEDRALS
+
+N   C CP2 CP2      0.4000  1     0.00 ! N    C    CP1  CP2
+N   C CP2 CP2      0.6000  2     0.00 ! N    C    CP1  CP2
+
+N   C CP2 HA       0.4000  1   180.00 ! N    C    CP1  HB
+N   C CP2 HA       0.6000  2     0.00 ! N    C    CP1  HB
+
+O   C CP2 CP2      0.4000  1   180.00 ! O    C    CP1  CP2  
+O   C CP2 CP2      0.6000  2     0.00 ! O    C    CP1  CP2  
+
+CP1 N C   CP2      2.7500  2   180.00 ! CT3  C    N    CP1   
+CP1 N C   CP2      0.3000  4     0.00 ! CT3  C    N    CP1 
+
+O   C CP2 HA       0.4000  1     0.00 !  O    C    CP1  HB  
+O   C CP2 HA       0.6000  2     0.00 !  O    C    CP1  HB  
+
+
+

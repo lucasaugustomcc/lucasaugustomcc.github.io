@@ -1,0 +1,5 @@
+distance.inp = input para calcular distancia entre dois grupos de atomos. 
+O resultado sera exatamente o mesmo da Figura 8C, curva azul, do artigo na pasta ../../
+
+Para rodar a distancia:  ./distance distance.inp 
+Isso vai gerar  "distance.dat", que pode ser plotado com qualquer programa de plotagem.
